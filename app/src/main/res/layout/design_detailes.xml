@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+android:layoutDirection="ltr"
+    >
+    <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardView.Light"
+        android:orientation="vertical"
+        app:cardElevation="@dimen/_2sdp"
+
+        >
+
+    <LinearLayout
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/favImageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_310sdp"
+                android:src="@drawable/coffee01"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/check_mark_line_icon"
+                android:layout_centerInParent="true"
+                android:id="@+id/selected"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:paddingTop="@dimen/_1sdp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginRight="@dimen/_210sdp"
+                 android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$5"
+                android:textSize="@dimen/_14sdp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_gravity="center|left"
+                />
+            <TextView
+
+                android:id="@+id/likeCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/_14sdp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                 />
+
+
+            <ImageButton
+                android:layout_marginRight="@dimen/_9sdp"
+                android:id="@+id/favBtn"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/ic_favorite_shadow_24dp"
+                android:layout_gravity="center|end"
+
+                android:layout_marginEnd="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.appcompat.widget.AppCompatButton
+android:id="@+id/continue11"
+    android:layout_centerHorizontal="true"
+android:text="continue"
+    android:visibility="gone"
+android:layout_width="@dimen/_110sdp"
+android:layout_height="@dimen/_25sdp"
+android:layout_gravity="center_horizontal"
+android:gravity="center"
+android:layout_marginTop="@dimen/_29sdp"
+android:background="@drawable/button3"
+android:fontFamily="@font/salsa"
+android:textAllCaps="false"
+
+android:textColor="#000000"
+android:textSize="@dimen/_10sdp">
+</androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

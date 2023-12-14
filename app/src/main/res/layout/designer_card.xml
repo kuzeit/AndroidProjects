@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_4sdp"
+    >
+    <LinearLayout
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/cheak1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/cheak"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:src="@drawable/check_mark_line_icon"/>
+    </LinearLayout>
+    <ImageView
+    android:id="@+id/designer_profile"
+    android:layout_gravity="center_vertical"
+    android:layout_width="@dimen/_50sdp"
+        android:layout_margin="@dimen/_6sdp"
+    android:layout_height="match_parent"
+    android:src="@drawable/profil_img"/>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+
+        android:layout_width="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:textColor="#000000"
+android:text="cvbcnvnvbmngcnvbnvbnvbnvbnv"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/salsa"
+
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:textColor="@color/grey"
+            android:text="cvbcnvnvnvbnv
+            cvcvbcvncbcvnvvbmngcnvbnvbnvbnvbnv"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/salsa"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

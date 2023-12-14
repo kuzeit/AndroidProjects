@@ -1,0 +1,117 @@
+package com.example.our_graduationproject.UI.GET_POST;
+
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.example.our_graduationproject.Controller.SessionManager;
+import com.example.our_graduationproject.Controller.VolleySingleton;
+import com.example.our_graduationproject.Model.Preference;
+import com.example.our_graduationproject.Model.prefernce_values;
+import com.example.our_graduationproject.SERVER.URLs;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class GetValues {
+
+         public static ArrayList<prefernce_values> getData(Context context,
+                                                          ArrayList<prefernce_values> list,
+                                                          //ArrayList<String> Strings,
+                                                          final OnValuesReceivedListner listener
+
+        ) {
+            String token = SessionManager.getInstance(context).getToken().getToken();
+
+            final ProgressDialog progressDialog = new ProgressDialog(context);
+            progressDialog.setMessage("Loading...");
+            progressDialog.show();
+             JSONObject params = new JSONObject();
+
+
+
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
+                    URLs.GET_PREFERENCES_VALUE, null, new Response.Listener<JSONObject>() {
+
+
+                @Override
+                public void onResponse(JSONObject response) {
+                    try {
+                        Toast.makeText(context, "sucesssssss" + response.getString("message"), Toast.LENGTH_LONG).show();
+                    } catch (JSONException e) {
+                        throw new RuntimeException(e);
+                    }
+                    System.out.println("pppppppp_id " + "1");
+
+                    try {
+                        JSONArray Pvalues = response.getJSONArray("data");
+
+
+                        List<prefernce_values> prefernce_v = new ArrayList<>();
+                        for (int j = 0; j < Pvalues.length(); j++) {
+                            JSONObject p = Pvalues.getJSONObject(j);
+                            int id1 = p.getInt("id");
+                            System.out.println("pppppppp_id1 " + id1);
+
+                            String name1 = p.getString("name");
+                            System.out.println("pppppppp_name1 " + name1);
+
+                            String image1 = p.getString("image").replace("localhost", "192.168.43.116");
+                            System.out.println("pppppppp_image1 " + image1);
+
+                            String price1 = String.valueOf(p.getInt("price"));
+                            System.out.println("pppppppp_price1 " + price1);
+
+                            int type_preference = p.getInt("prefernce_id");
+                            System.out.println("pppppppp_prefernce_id1 " + type_preference);
+
+                            prefernce_values pv = new prefernce_values(type_preference,
+                                    image1, price1, id1, name1);
+                            prefernce_v.add(pv);
+
+                        }
+
+
+                        listener.onValueReceived(list);
+
+
+                         progressDialog.dismiss();
+
+                    } catch (JSONException e) {
+
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(context, "errorrr " + error.getMessage(), Toast.LENGTH_LONG).show();
+                    System.out.println("errorrr " + error.getMessage());
+                }
+            }) {
+                public Map<String, String> getHeaders() {
+                    Map<String, String> params = new HashMap<String, String>();
+                    //params.put("Accept","application/json");
+                    params.put("Authorization", "Bearer " + token);
+                    return params;
+                }
+            };
+
+            VolleySingleton.getInstance(context).addToRequestQueue(jsonObjectRequest);
+
+            return list;
+        }
+
+
+    }
+
+

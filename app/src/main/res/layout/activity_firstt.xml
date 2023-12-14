@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+android:gravity="center_horizontal"
+
+    tools:context=".UI.firstt">
+
+    <TextView
+
+          android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_13sdp"
+         android:textColor="#000000"
+         android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/salsa"
+           />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_c"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_margin="@dimen/_4sdp"
+
+        />
+    <TextView
+
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_25sdp"
+
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/salsa"
+        android:text="skip"
+ android:background="@drawable/button3"
+        android:layout_below="@id/recyclerview_c"/>
+      </RelativeLayout>

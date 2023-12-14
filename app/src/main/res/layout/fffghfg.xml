@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+     >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="left"
+        android:layout_marginBottom="61dp"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="670dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="61dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="3pt">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="255dp"
+              />
+
+        <TextView
+            android:id="@+id/name_pro_90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:fontFamily="casual"
+            android:padding="3pt"
+            android:text="name"
+
+            android:textColor="#254964" />
+
+        <TextView
+            android:id="@+id/spe_pro0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:padding="3pt"
+            android:text="specialization"
+
+            android:textColor="#254964"
+
+            />
+
+        <TextView
+            android:id="@+id/spe_pro1_90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:fontFamily="casual"
+            android:padding="3pt"
+
+            android:textColor="#254964"
+
+            />
+
+        <TextView
+            android:id="@+id/em_pro0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:padding="3pt"
+            android:text="Email"
+
+            android:textColor="#254964"
+
+            />
+
+        <TextView
+            android:id="@+id/em_pro1_90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:fontFamily="casual"
+            android:padding="3pt"
+            android:textColor="#254964"
+
+            />
+
+        <TextView
+            android:id="@+id/ph_pro0"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:padding="3pt"
+            android:text="Phone"
+
+            android:textColor="#254964"
+
+            />
+
+        <TextView
+            android:id="@+id/ph_pro1_90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:fontFamily="casual"
+            android:padding="3pt"
+
+            android:textColor="#254964"
+
+            />
+
+        <TextView
+            android:id="@+id/age_pro0"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:padding="3pt"
+            android:text="gender"
+
+            android:textColor="#254964"
+
+            />
+
+        <TextView
+            android:id="@+id/age_pro1_90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:fontFamily="casual"
+            android:padding="3pt"
+
+            android:textColor="#254964"
+
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#D3F0F5"
+        android:orientation="vertical"
+        android:padding="3pt">
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

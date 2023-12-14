@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/_60sdp"
+android:orientation="vertical"
+    tools:context=".UI.ChooseDesigner">
+    <TextView
+        android:layout_marginLeft="@dimen/_30sdp"
+
+        android:text="Choose designer"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         style="@style/Font"
+        android:layout_marginBottom="@dimen/_20sdp"         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_c"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_280sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continue11"
+        android:layout_centerHorizontal="true"
+        android:text="continue"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/button3"
+        android:textAllCaps="false"
+         style="@style/Font"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>

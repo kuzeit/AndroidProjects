@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+     >
+    <LinearLayout
+        android:padding="@dimen/_2sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@drawable/like">
+
+    </ImageView>
+    <LinearLayout
+        android:paddingTop="@dimen/_20sdp"
+        android:layoutDirection="ltr"
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Advertising and social media"
+            android:textColor="#000000"
+
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/salsa"
+            />
+        <ImageView
+            android:id="@+id/img"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/right_arrow"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_11sdp"
+            android:layout_width="@dimen/_15sdp"
+             android:layout_height="@dimen/_15sdp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="@dimen/_8sdp"
+
+        android:id="@+id/recyclerview_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_margin="@dimen/_2sdp"
+        android:orientation="horizontal"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_12sdp"
+            android:layoutDirection="ltr"
+            android:id="@+id/relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:id="@+id/text2Advertising"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+
+                android:text="Logo and visual identity"
+                android:textColor="#000000"
+
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/salsa"
+                />
+            <ImageView
+                android:id="@+id/img2"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/right_arrow"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="@dimen/_8sdp"
+
+            android:id="@+id/recyclerview_cAdvertising"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_margin="@dimen/_2sdp"
+            android:orientation="horizontal"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_12sdp"
+            android:layoutDirection="ltr"
+            android:id="@+id/relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:id="@+id/text2Drawing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Covers of books and magazines"
+                android:textColor="#000000"
+
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/salsa"
+                />
+            <ImageView
+                android:id="@+id/img3"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/right_arrow"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="@dimen/_8sdp"
+
+            android:id="@+id/recyclerview_cCovers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_margin="@dimen/_2sdp"
+            android:orientation="horizontal"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_12sdp"
+            android:layoutDirection="ltr"
+            android:id="@+id/relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:id="@+id/text2Covers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+
+                android:text="Drawing of products and packages"
+                android:textColor="#000000"
+
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/salsa"
+                />
+            <ImageView
+                android:id="@+id/img4"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/right_arrow"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="@dimen/_8sdp"
+
+            android:id="@+id/recyclerview_cDrawing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_margin="@dimen/_2sdp"
+            android:orientation="horizontal"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

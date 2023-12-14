@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+     <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Our_GraduationProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".FullOrder2"
+            android:exported="false" />
+        <activity
+            android:name=".download1"
+            android:exported="false" />
+        <activity
+            android:name=".Download"
+            android:exported="false" />
+        <activity
+            android:name=".PDFReader"
+            android:exported="false" />
+        <activity
+            android:name=".UI.profile"
+            android:exported="false" />
+        <activity
+            android:name=".UI.DesignDetailes"
+            android:exported="false" />
+        <activity
+            android:name=".Form"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ChooseFont"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ArtBoard.Display"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.CustomizedDetailes"
+            android:exported="false" />
+        <activity
+            android:name=".UI.PDFReader"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.Form"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.FullOrder2"
+            android:exported="false" />
+        <activity
+            android:name=".UI.FullOrder"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.CoverBook_Magazine_Detailes"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.MagazineDetailes"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.ShowSimilarCovers"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.CustomizedOrder"
+            android:exported="false" />
+        <activity
+            android:name=".UI.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.LogoDetailes"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.SocialDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.ProdctDetailes"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ChooseColor"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Details.showSimilarOrders"
+            android:exported="false" />
+        <activity
+            android:name=".UI.AllGallary"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ChooseDesigner"
+            android:exported="false" />
+        <activity
+            android:name=".UI.chatwindo"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Gallary"
+            android:exported="false"
+            android:theme="@style/Theme.Our_GraduationProject" />
+        <activity
+            android:name=".UI.Order_2"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Order1"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ArtBoard.ArtBoard"
+            android:exported="false" />
+        <activity
+            android:name=".UI.firstt"
+            android:exported="false" />
+        <activity
+            android:name=".UI.FinalRegister"
+            android:exported="false" />
+        <activity
+            android:name=".UI.RegisterActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

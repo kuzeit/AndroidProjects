@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "883909090418",
+    "firebase_url": "https://tahani-2b42c-default-rtdb.firebaseio.com",
+    "project_id": "tahani-2b42c",
+    "storage_bucket": "tahani-2b42c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883909090418:android:b9f0b9f59324f4f64576eb",
+        "android_client_info": {
+          "package_name": "com.example.our_graduationproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883909090418-h7hjfbboagk7arv2jo3jto1i4bf1a7f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC76TgJMrMWAFEFrvv9KKMQ3Sus0j7k1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883909090418-h7hjfbboagk7arv2jo3jto1i4bf1a7f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883909090418:android:5918e142637a092e4576eb",
+        "android_client_info": {
+          "package_name": "com.example.myapplication_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883909090418-h7hjfbboagk7arv2jo3jto1i4bf1a7f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC76TgJMrMWAFEFrvv9KKMQ3Sus0j7k1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883909090418-h7hjfbboagk7arv2jo3jto1i4bf1a7f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883909090418:android:84479350d9a8bb7e4576eb",
+        "android_client_info": {
+          "package_name": "com.example.our_graduationproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883909090418-h7hjfbboagk7arv2jo3jto1i4bf1a7f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC76TgJMrMWAFEFrvv9KKMQ3Sus0j7k1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883909090418-h7hjfbboagk7arv2jo3jto1i4bf1a7f4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

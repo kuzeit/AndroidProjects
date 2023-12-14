@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0F9D58</item>
+        <item name="colorPrimaryVariant">#0F9D58</item>
+        <item name="colorOnPrimary">#000</item>
+    </style>
+    <style name="TextInputLayoutAppearanceDifferent" parent="@style/ThemeOverlay.MaterialComponents">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+          <style name="Font" parent="@android:style/TextAppearance.Medium">
+            <item name="android:fontStyle" tools:ignore="NewApi">normal</item>
+            <item name="android:textSize">@dimen/_12sdp</item>
+            <item name="android:textColor">@color/grey</item>
+            <item name="android:fontFamily">@font/salsa</item>
+        </style>
+
+    <style name="button" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontStyle" tools:ignore="NewApi">normal</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/button3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/salsa</item>
+    </style>
+
+    <style name="seek" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:itemBackground">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+</resources>

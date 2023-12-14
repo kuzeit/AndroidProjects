@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+
+    android:layout_below="@+id/linear1"
+    android:id="@+id/linear2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_61sdp"
+        android:id="@+id/image1"
+
+android:layout_centerHorizontal="true"
+        android:src="@drawable/first_1"/>
+
+    <TextView
+        android:id="@+id/type"
+android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_below="@id/image1"
+        android:fontFamily="@font/salsa"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="#000000"
+
+        android:text="Advertising and social media"
+        />
+
+</RelativeLayout>
